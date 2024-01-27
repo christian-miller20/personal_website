@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Me</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
+					<li><a href="#one">Bio</a></li>
+					<li><a href="#two">Highlighted Projects</a></li>
+					<li><a href="#three">Resume and more</a></li>
+					<li><a href="#four">Get in Touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- ADD BACKGROUND PHOTO HERE OF MYSELF -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Hello, I'm Christian Miller</h1>
+			</div>
+		</section>
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<div class="content">
+					<div class="inner">
+						<h2>Who I am</h2>
+						<p> As a senior on the verge of completing my degree in computer science at the University of
+							Notre Dame (Go Irish!), I am driven by a relentless curiosity about the ever-evolving
+							landscape of technology. My focus extends to the frontiers of XR (VR/AR/MR), computer
+							vision, and machine learning, yet my appetite for learning knows no bounds.
+
+							From crafting XR applications for analyzing LiDAR data in Unity Game Engine to building
+							custom machine learning models predicting NBA game outcomes, my journey is marked by a
+							passion for transforming theoretical concepts into tangible innovations.
+						</p>
+
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Some of My Explorations</h2>
+				<div class="features">
+					<section>
+						<div id="metaverse" class="collapsible-section">
+							<span class="icon solid major fa-code"></span>
+							<h3>Into the Metaverse</h3>
+							As I settled into my second day at Aeye Inc, a computer vision startup, I noticed a sticky
+							note with 'Pointcloud in VR' scribbled on it. Following discussions with my mentor to set
+							project goals, I embarked on the development of a VR application, aiming to enable users to
+							visualize and interact with dynamic LiDAR pointcloud data.
+							<br><br>
+							After a week of thorough research, I found no evidence of anyone attempting this with
+							dynamic data. Undeterred, I drew inspiration from techniques outlined in various research
+							papers. Leveraging the capabilities of the Unity Game Engine and an HTC Vive 3, I set out to
+							accomplish the task.
+							<br><br>
+							A couple of weeks later, a working prototype emerged. Despite its initial capabilities to
+							load and navigate through pointclouds, I understood that optimization was pivotal for an
+							enhanced user experience. Recognizing the potential, I strategically leveraged the
+							multithreading and concurrency capabilities of the GPU in combination with Unity. This not
+							only optimized the
+							application's performance but also laid the groundwork for real-time data viewing from a
+							sensor—an achievement that brought the project one step closer to a seamless and dynamic
+							user interaction. After presenting to the company, I had a line of people from all
+							backgrounds
+							coming by to try it on for themselves. Rendering over 1000 frames comprised of 2GB csvs each
+							in seconds,
+							the application was a success.
+							<br><br>
+							In the end, what started as a scribble on a sticky note unfolded into a transformative
+							journey. The optimized VR application not only showcased the power of computer vision but
+							also paved the way for real-time data visualization. This experience at Aeye not only
+							sharpened my technical skills but reaffirmed my belief in the potential of pushing
+							boundaries within the realms of technology.
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/christian-miller20/vr_pointcloud_visualizer"
+										class="button">See it on github!</a></li>
+							</ul>
+						</div>
+						<button id="button_metaverse" onclick="toggleContent('metaverse')" style="margin:10px;">Show
+							more</button>
+					</section>
+					<section class="image-container" style="padding:0px;">
+						<img src="images/metaverse.jpeg" alt="" />
+					</section>
+					<section class="image-container" style="padding:0px;">
+						<img src="images/nba.png" alt="" />
+					</section>
+					<section>
+						<div id="nba_predictor" class="collapsible-section">
+							<span class="icon solid major fa-desktop"></span>
+							<h3>Prediciting NBA Games</h3>
+							<p>
+								As my data structures class concluded, our final assignment beckoned: implement a data
+								structure with practical use. Enticed by the allure of riches and the prospect of
+								predicting
+								NBA games, my team embarked on what turned out to be a challenging journey.
+								<br><br>
+								The following weeks blurred into a whirlwind of late nights, tutorials, and manuals, all
+								within the confines of the windowless basement of the engineering building. Despite the
+								frustration, we persisted and pieced together the necessary components. We collected and
+								cleaned data, trained a machine learning model for classification, and implemented a
+								minimum
+								heap to fulfill the class requirements, showcasing the 'closest' games.
+								<br><br>
+								The culmination was a functioning NBA game predictor boasting an impressive 74%
+								accuracy.
+								Built utilizing PyTorch and Python, the model was trained on a dataset of over 7000
+								games
+								from the past several seasons. Feature engineering played a crucial role, extracting
+								insights from player statistics, team performance, and historical match data.
+								<br><br>
+								The prediction algorithm considered various factors such as team momentum, statistics,
+								and
+								home-court advantage. Continuous refinement of the model involved tweaking
+								hyperparameters and which
+								statistics best represented a team's performance, enhancing its accuracy over time.
+								<br><br>
+								Our journey, though initially challenging, proved rewarding. The project not only
+								demonstrated our proficiency in implementing sophisticated data structures but also
+								highlighted the potential of combining machine learning and classical algorithms in
+								predicting real-world scenarios. As we unveiled our NBA game predictor to our professor,
+								the
+								windowless basement transformed into a space of triumph, a testament to the
+								determination
+								and collaborative spirit that fueled our success.
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/christian-miller20/NBA-ML-Game-Outcome-Predictor"
+										class="button">See it on github!</a></li>
+							</ul>
+						</div>
+						<button id="button_nba_predictor" onclick="toggleContent('nba_predictor')">Show more</button>
+					</section>
+					<section>
+						<div id="bbs" class="collapsible-section">
+							<span class="icon solid major fa-gem"></span>
+							<h3>BetND</h3>
+							<p>
+								In the fall of 2022, I embarked on a journey to pioneer BetND, an on-campus sports
+								betting marketplace that would soon become a hub for over 60 daily active users. This
+								project not only showcased my technical skills but also highlighted my ability to lead
+								and collaborate with a team of 4 peers.
+								<br><br>
+								One of the project's key innovations was the implementation of the ability to transact 
+								current bets with other users. For example, if a user placed a bet on a team to win, 
+								then halfway through the game the team was up by 20 points, the user could sell the bet
+								to another user for a profit. 
+								<br><br>
+								To support the robust functionalities of BetND, I engineered a comprehensive database.
+								Comprising over 8000 entries distributed across 7 tables, the database was designed for
+								organized and efficient data manipulation and access using SQL. This architecture laid
+								the foundation for a reliable and scalable system that could handle the intricacies of
+								sports betting data.
+								<br><br>
+								The culmination of our efforts resulted in the creation of a modern and user-intuitive
+								multi-paged website. Developed using a tech stack that included PHP, JavaScript, and
+								Python, the website presented users with all the relevant information they needed for
+								informed and enjoyable betting experiences.	
+								<br><br>
+								BetND stands not only as a testament to my technical prowess but also as a demonstration
+								of effective collaboration, innovation, and entrepreneurial spirit. This project has
+								become a cornerstone in my portfolio, showcasing my ability to conceptualize, develop,
+								and successfully launch a complex, data-driven platform.
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/christian-miller20/BetsButStocks" class="button">See it
+										on github!</a></li>
+							</ul>
+						</div>
+						<button id="button_bbs" onclick="toggleContent('bbs')">Show more</button>
+					</section>
+					<section class="image-container" style="padding:0px;">
+						<div class="scrollable-box" id="bbs_scrollbox">
+							<img src="images/betsbutstocks.PNG" alt="Long Image">
+						</div>
+						P.S. I scroll
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Get in touch</h2>
+				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+					malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
+					imperdiet est velit quis lorem.</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><a href="" class="button submit">Send Message</a></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Address</h3>
+								<span>12345 Somewhere Road #654<br />
+									Nashville, TN 00000-0000<br />
+									USA</span>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<a href="#">user@untitled.tld</a>
+							</li>
+							<li>
+								<h3>Phone</h3>
+								<span>(000) 000-0000</span>
+							</li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span
+												class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
+									</li>
+									<li><a href="#" class="icon brands fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-linkedin-in"><span
+												class="label">LinkedIn</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
