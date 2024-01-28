@@ -7,7 +7,7 @@ function toggleContent(sectionId) {
 
     if (!content.classList.contains("expanded")) {
         // If content is collapsed, scroll to the explorations section
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'auto' });
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 }
 
